@@ -1,0 +1,143 @@
+body {
+  background-color: black;
+  margin: 0 !important;
+}
+
+.row-no-padding {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+#nav {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  z-index: 99;
+  position: fixed;
+  padding-right: 20px;
+  align-items: flex-end;
+  justify-content: center;
+}
+.fab {
+  color: white;
+  font-size: 22px;
+  margin-right: 10px;
+}
+
+.fas {
+  color: white;
+  font-size: 30px;
+}
+#logo {
+  padding-bottom: 10px;
+}
+.section {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 100px;
+}
+
+
+
+.section p {
+  padding: 20px;
+}
+/*
+#spotify {
+  background: linear-gradient(-225deg, rgba(0, 0, 0, 0.5) 0%, rgba(255, 255, 255, 0.7) 60%);
+} */
+#about {
+  background: linear-gradient(-225deg, rgba(255, 255, 255, 0.7) 0%, rgba(0, 0, 0, 0.5) 60%);
+}
+
+.banner {
+  text-align: center;
+  /* padding: 150px; */
+  background-image: linear-gradient(-225deg, rgba(0,0,0,0.4) 0%, rgba(0,36,61,0.2) 50%), url('images/bkg3.jpg');
+  height: 100vh;
+  /* if you have a 70px navbar => height: calc(100vh - 70px); */
+  background-size: cover !important;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.banner-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.9;
+}
+
+.banner-content {
+  padding-right: 50px;
+  margin-bottom: 50px;
+}
+.banner-link:hover {
+  text-decoration: none;
+  opacity: 1;
+}
+.banner p {
+    font-size:30px;
+    letter-spacing: 2px;
+    font-family: "Montserrat", sans-serif;
+    color: rgb(255, 255, 255);
+    opacity: 0.95;
+  }
+
+p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.7);
+}
+.section-header {
+  text-align: center;
+  font-size: 32px;
+  color: rgba(255, 255, 255, 0.8);
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 2px;
+  padding-top: 70px;
+}
+#about-pic {
+  background-image: url('images/bkg5.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 50%;
+}
+@media(max-width: 720px) {
+
+  .banner-title {
+    width: 400px;
+    background: #2B2B2B;
+    padding: 10px 15px;
+    border-radius: 3px;
+    font-size: 30px !important;
+    font-weight: bold;
+    text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+  }
+}
+
+@media(max-width: 425px) {
+  .banner {
+    height: 50vh;
+  }
+
+  .banner-content {
+    top: 200px;
+  }
+  .banner-title {
+    width: 320px;
+    background: #2B2B2B;
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-size: 25px !important;
+    font-weight: bold;
+    text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
+    margin-bottom: 15px;
+  }
+}

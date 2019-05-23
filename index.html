@@ -23,7 +23,7 @@
       <img id="logo" src="images/logo.png">
       <a href="#spotify-header" class="banner-link">
         <p>>> EXPLORE <<</p>
-        <!-- <i class="fas fa-chevron-down"></i> -->
+        <i class="fas fa-chevron-down"></i>
       </a>
 
     </div>
@@ -52,8 +52,39 @@
     </div>
   </div>
   <div class="section" id="newsletter">
-    <div class="typeform-widget" data-url="https://dante317742.typeform.com/to/RCzKSs" style="width: 100%; height: 500px;"></div>
-    <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
+    <div class="typeform-widget" data-url="https://dante317742.typeform.com/to/RCzKSs"></div>
   </div>
+    <script>
+      (function() {
+        var qs,js,q,s,d=document,
+        gi=d.getElementById,
+        ce=d.createElement,
+        gt=d.getElementsByTagName,
+        id="typef_orm", b="https://embed.typeform.com/";
+        if(!gi.call(d,id)) {
+          js=ce.call(d,"script");
+          js.id=id;
+          js.src=b+"embed.js";
+          q=gt.call(d,"script")[0];
+          q.parentNode.insertBefore(js,q)
+        }
+      })();
+
+      const initUpdateNavbarOnScroll = () => {
+      const navbar = document.querySelector('#nav');
+      if (navbar) {
+        window.addEventListener('scroll', () => {
+          if (window.scrollY >= window.innerHeight * 0.5) {
+            navbar.classList.add('nav-transparent');
+          } else {
+            navbar.classList.remove('nav-transparent');
+          }
+        });
+      }
+    };
+
+    initUpdateNavbarOnScroll();
+
+    </script>
 </body>
 </html>

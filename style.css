@@ -114,6 +114,33 @@ p {
   width: 100%;
 }
 
+.btn-pk {
+  background-color: #e2e2e2;
+  color: black;
+  border-radius: 3px;
+  padding: 20px 40px;
+  font-family: Montserrat, sans-serif;
+  font-size: 20px;
+  opacity: 0.8;
+  margin: 20px;
+}
+
+.btn-pk:hover {
+  background-color: #444;
+  color: white;
+  text-decoration: none;
+}
+
+.btn-pk:hover > i {
+  background-color: #444;
+  color: white;
+  text-decoration: none;
+}
+.download {
+  font-size: 20px;
+  color: #444;
+  padding-left: 10px;
+}
 
 /* newsletter */
 
